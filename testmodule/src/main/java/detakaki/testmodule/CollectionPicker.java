@@ -43,6 +43,7 @@ public class CollectionPicker extends LinearLayout {
     private int mTextColor = android.R.color.white;
     private int mRadius = 10;
     private boolean mInitialized;
+    private TextView itemTextView;
 
     private boolean simplifiedTags;
 
@@ -174,7 +175,7 @@ public class CollectionPicker extends LinearLayout {
                 });
             }
 
-            TextView itemTextView = (TextView) itemLayout.findViewById(R.id.item_name);
+            itemTextView = (TextView) itemLayout.findViewById(R.id.item_name);
             itemTextView.setText(item.text);
             itemTextView.setPadding(textPaddingLeft, textPaddingTop, textPaddingRight,
                     texPaddingBottom);
@@ -209,7 +210,12 @@ public class CollectionPicker extends LinearLayout {
             }
             totalPadding += itemWidth;
         }
+        
         // }
+    }
+
+    public void setTextColor(int res){
+        this.itemTextView.setTextColor(res);
     }
 
     private View createItemView(Item item) {
