@@ -11,9 +11,8 @@
     <TextView
         android:background="@drawable/tags_border"
         android:id="@+id/item_name"
-        android:layout_width="0dip"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:gravity="center"
         android:singleLine="true"
         android:textSize="12sp"
