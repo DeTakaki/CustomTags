@@ -579,7 +579,7 @@ public class HashtagView extends LinearLayout {
         for (Integer key : viewMap.keySet()) {
             ViewGroup rowLayout = getRowLayout(viewMap.get(key).size());
             addView(rowLayout);
-            applyDistribution(viewMap.get(key));
+//            applyDistribution(viewMap.get(key));
             rowLayout.setLayoutTransition(layoutTransition);
 
             for (ItemData item : viewMap.get(key)) {
